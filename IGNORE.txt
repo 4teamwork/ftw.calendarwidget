@@ -1,4 +1,4 @@
-# created by: svn propset svn:ignore -F ./IGNORE.TXT .
+# created by: svn propset svn:ignore -F ./IGNORE.txt .
 
 ftw.calendarwidget.egg-info
 build
