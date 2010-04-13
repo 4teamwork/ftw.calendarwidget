@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ftw.calendarwidget">
+
+    <!-- Resource directory -->
+    <browser:resourceDirectory
+        name="ftw.calendarwidget"
+        directory="ressources"
+        /> 
+
+</configure>

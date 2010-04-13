@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False">
+
+  <object name="ftw_calendarwidget"
+          meta_type="Filesystem Directory View"
+          directory="ftw.calendarwidget:skins/ftw_calendarwidget"/>
+
+  <skin-path name="*" based-on="Plone Default">
+   <layer name="ftw_calendarwidget"
+      insert-after="custom"/>
+  </skin-path>
+</object>

@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="ftw.calendarwidget">
+
+   <!-- <i18n:registerTranslations directory="locales" /> -->
+   <include package=".browser" />
+
+   <include package="collective.jqueryui" />
+
+   <genericsetup:registerProfile
+       name="default"
+       title="ftw.calendarwidget"
+       directory="profiles/default"
+       description=""
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+   <cmf:registerDirectory
+       name="ftw_calendarwidget
+             "/>
+   
+</configure>
