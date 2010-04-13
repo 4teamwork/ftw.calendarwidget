@@ -11,7 +11,7 @@ jq(function(){
     jq.datepicker.setDefaults(jq.extend(datepicker_lang));
         
     jq('div.datepicker').each(function(){
-        var field = jq(this).children('input:first')
+        var field = jq(this).children('input:first');
         var default_value = jq(this).children('input:first').attr('value');
         var temp = default_value.split('/');
         var default_date = new Date(temp[0], temp[1], temp[2]);
@@ -35,19 +35,23 @@ function update_datepicker(id){
     var day = jq('#'+ id+'_day').attr('value');
     var mf = jq('#'+ id+'_month');
     
-    var month = mf.children(':selected').text()
+    var month = mf.children(':selected').text();
     var input = jq('#'+ id).parents('div.datepicker:first').children('input:first');
     input.attr('value', day+ '. ' + month +' '+ year);
 }
 
 function insert_date(date, e){
     field_id = jq(e).attr('id');
-    yf = jq('#' + field_id +'_year')
+    yf = jq('#' + field_id +'_year');
     yf.attr('value', e.selectedYear);
 
-    mf = jq('#' + jq('#edit_form_start_date_0').attr('id')+'_month');
+    mf = jq('#' + field_id +'_month');
     mf.attr('value', mf.attr('options')[e.selectedMonth + 1].value);
 
-    df = jq('#' + jq('#edit_form_start_date_0').attr('id')+'_day')
-    df.attr('value', e.selectedDay);
+    df = jq('#'+ field_id +'_day');
+    var day = e.selectedDay;
+    if(day < 10){
+        day = '0'+ day.toString();
+    }
+    df.attr('value', day);
 }
