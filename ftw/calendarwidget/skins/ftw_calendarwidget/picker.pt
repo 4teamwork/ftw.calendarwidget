@@ -13,7 +13,7 @@
      
     <!-- The calendar date picker. -->
     <div class="datepicker" metal:define-macro="ftw_calendarDatePickerBox" tal:define="
-         inputIndex uniqueItemIndex/next;
+         inputIndex python: plone_view.uniqueItemIndex().next();
          show_hm show_hm | python:1;
          show_ymd show_ymd | python:1;
          starting_year starting_year | nothing;

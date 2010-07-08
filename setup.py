@@ -26,7 +26,7 @@ setup(name='ftw.calendarwidget',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.jqueryui',
+          'collective.js.jqueryui',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
