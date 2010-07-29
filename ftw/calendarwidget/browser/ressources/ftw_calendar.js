@@ -19,7 +19,7 @@ jq(function(){
         picker = field.datepicker({
             showOn: 'button',
             onClose: insert_date,
-            buttonImage: portal_url + '/popup_calendar.gif',
+            buttonImage: portal_url + '/popup_calendar.png',
             buttonImageOnly: true,
             dateFormat: 'd. MM yy',
             changeMonth: true,
