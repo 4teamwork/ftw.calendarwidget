@@ -7,7 +7,7 @@
     <browser:resourceDirectory
         name="ftw.calendarwidget"
         directory="resources"
-        layer="..interfaces.ICalendarWidgetLayer"
+        layer="ftw.calendarwidget.interfaces.ICalendarWidgetLayer"
         /> 
 
 
