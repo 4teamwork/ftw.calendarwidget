@@ -2,7 +2,7 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry"
    autogroup="False">
 
- <javascript cacheable="True" compression="safe" cookable="True"
+ <!-- <javascript cacheable="True" compression="safe" cookable="True"
     enabled="True" expression="" id="++resource++jquery.ui/ui/i18n/ui.datepicker-de.js"
     inline="False"/>
 
@@ -12,7 +12,7 @@
      
  <javascript cacheable="True" compression="safe" cookable="True"
      enabled="True" expression="" id="++resource++jquery.ui/ui/i18n/ui.datepicker-it.js"
-     inline="False"/>
+     inline="False"/> -->
      
  <javascript cacheable="True" compression="safe" cookable="True"
     enabled="True" expression="" id="++resource++ftw.calendarwidget/ftw_calendar.js"

@@ -100,6 +100,7 @@
       </select>
       </span>
 
+
       <span i18n:translate="date_separator">/</span>
 
     <select name="ic_day"
@@ -121,7 +122,6 @@
     <input type="hidden" tal:attributes="name string:$inputname;
                                          id input_id;
                                          value python:not show_hm and inputvalue and hasattr(inputvalue, 'strftime') and inputvalue.strftime('%Y/%m/%d') or inputvalue"/>
-    
 
       <a tal:condition="show_jscal"
          tal:attributes="id string:datepicker_${input_id};

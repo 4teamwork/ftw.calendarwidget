@@ -6,7 +6,15 @@
     <!-- Resource directory -->
     <browser:resourceDirectory
         name="ftw.calendarwidget"
-        directory="ressources"
+        directory="resources"
+        layer="..interfaces.ICalendarWidgetLayer"
         /> 
+
+
+    <!-- <resource
+        name="ftw.calendarwidget.ftw_calendar.js"
+        file="ressources/ftw_calendar.js"
+        /> -->
+
 
 </configure>

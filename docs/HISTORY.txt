@@ -5,6 +5,9 @@ Changelog
 1.0a2
 -----
 
+* fixed resources
+  [phgross]
+
 * change collective.jqueryui to collective.js.jqueryui and fixed some templates for plone4 support
   [phgross, 08.07.2010]
 
