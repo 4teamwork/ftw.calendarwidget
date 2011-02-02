@@ -2,6 +2,10 @@ Changelog
 =========
 
 
+1.0c2
+-----
+
+
 1.0c1
 -----
 * Fix default_date (for IE7).
