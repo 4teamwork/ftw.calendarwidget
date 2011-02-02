@@ -4,7 +4,11 @@ Changelog
 
 1.0c1
 -----
-
+* Fix default_date (for IE7).
+  [02.02.2011, mathias.leimgruber]
+  
+* Clean up js code for IE7/8.
+  [02.02.2011, mathias.leimgruber]
 
 1.0a2
 -----
