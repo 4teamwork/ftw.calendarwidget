@@ -30,8 +30,8 @@ jq(function(){
                 buttonImageOnly: true,
                 dateFormat: 'd. MM yy',
                 changeMonth: true,
-                changeYear: true
-  //              defaultDate: default_date
+                changeYear: true,
+                defaultDate: default_date
             });
         });        
     }
