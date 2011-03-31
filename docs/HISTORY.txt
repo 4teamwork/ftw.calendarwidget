@@ -4,7 +4,9 @@ Changelog
 
 1.0c2
 -----
-
+* Little bit refactoring, because of some js errors. 
+  Added calendar_after_change jquery event on at-field-wrapper element. 
+  [31.03.2011, mathias.leimgruber]
 
 1.0c1
 -----

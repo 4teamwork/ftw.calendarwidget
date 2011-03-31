@@ -31,23 +31,48 @@ jq(function(){
                 dateFormat: 'd. MM yy',
                 changeMonth: true,
                 changeYear: true,
-                defaultDate: default_date
+                defaultDate: default_date,
+                onClose: function(dateText, inst){
+                        // XXX refactor me, please - it works, but OMFG
+                        inst.input.attr('value', dateText);
+                        var new_field = inst.input.parents('[id*=archetypes-fieldname]');
+                        jq('select[id*=year]', new_field).attr('value', inst.currentYear);
+                        // hack adding leading zero
+                        var currentMonth = inst.currentMonth+1; // XXX: for some reason the wrong month is stored, ARGH
+                        if (inst.currentMonth.toString().length == 1){
+                            currentMonth = "0"+currentMonth;
+                        }
+                        var currentDay = inst.currentDay;
+                        if (currentDay.toString().length == 1){
+                            currentDay = "0"+currentDay;
+                        }
+                        jq('select[id*=month]', new_field).attr('value', currentMonth);
+                        jq('select[id*=day]', new_field).attr('value', currentDay);
+                        
+                        // Trigger an after change events for further actions
+                        new_field.trigger('calendar_after_change');
+                    
+                }
             });
+            
+            // XXX: OLD IMPLEMENTATION
+            // // bind update method
+            // field.parents('[id*=archetypes-fieldname]').bind('change', function(e){
+            //     var input = jq(this).find('input:first');
+            //     var id = input.attr('id');
+            //     var year = jq('#'+ id+'_year').attr('value');
+            //     var day = jq('#'+ id+'_day').attr('value');
+            //     var month = jq('#'+ id+'_month').attr('value');
+            //     input.attr('value', day+ '. ' + month +' '+ year);
+            //     
+            //     // Trigger an after change events for further actions
+            //     jq(this).trigger('calendar_after_change');
+            // });
+            
         });        
     }
     init_datepicker();
     
-    
-    function update_datepicker(id){
-        var year = jq('#'+ id+'_year').attr('value');
-        var day = jq('#'+ id+'_day').attr('value');
-        var mf = jq('#'+ id+'_month');
-
-        var month = mf.children(':selected').text();
-        var input = jq('#'+ id).parents('div.datepicker:first').children('input:first');
-        input.attr('value', day+ '. ' + month +' '+ year);
-    }
-
     function insert_date(date, e){
         var field_id = jq(e).attr('id');
         var yf = jq('#' + field_id +'_year');
