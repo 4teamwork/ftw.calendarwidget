@@ -9,7 +9,7 @@ setup(name='ftw.calendarwidget',
       version=version,
       description='A plone widget for archetypes using the jQuery UI ' + \
           'calendar widget',
-      long_description=open('README.txt').read() + '\n' + \
+      long_description=open('README.rst').read() + '\n' + \
           open(os.path.join('docs', 'HISTORY.txt')).read(),
 
       # Get more strings from
