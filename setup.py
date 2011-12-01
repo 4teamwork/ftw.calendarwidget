@@ -7,29 +7,42 @@ maintainer = 'Philippe Gross'
 
 setup(name='ftw.calendarwidget',
       version=version,
-      description="A plone widget for archetypes using the jQuery UI calendar widget",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+      description='A plone widget for archetypes using the jQuery UI ' + \
+          'calendar widget',
+      long_description=open('README.txt').read() + '\n' + \
+          open(os.path.join('docs', 'HISTORY.txt')).read(),
+
+      # Get more strings from
+      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
-        "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
+        'Framework :: Plone',
+        'Framework :: Plone :: 3.2',
+        'License :: OSI Approved :: GNU General Public License (GPL)',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.6',
+        'Topic :: Software Development :: Libraries :: Python Modules',
         ],
-      keywords='',
-      author='%s, 4teamworkk GmbH' % maintainer,
+
+      keywords='ftw calendar widget archetypes plone',
+      author='4teamworkk GmbH',
       author_email='mailto:info@4teamwork.ch',
-      url='http://psc.4teamwork.ch/4teamwork/egov/egov.mystuff/',
+      url='https://github.com/4teamwork/ftw.calendarwidget',
       license='GPL2',
+
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['ftw'],
       include_package_data=True,
       zip_safe=False,
+
       install_requires=[
-          'setuptools',
-          'collective.js.jqueryui',
-          # -*- Extra requirements: -*-
-      ],
-      entry_points="""
+        'setuptools',
+        'collective.js.jqueryui',
+        # -*- Extra requirements: -*-
+        ],
+
+      entry_points='''
       # -*- Entry points: -*-
-      """,
+      [z3c.autoinclude.plugin]
+      target = plone
+      ''',
       )
