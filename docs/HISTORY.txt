@@ -2,38 +2,44 @@ Changelog
 =========
 
 
-1.1
----
+1.1 (unreleased)
+----------------
+
+- Nothing changed yet
 
 
-1.0c2
------
-* Little bit refactoring, because of some js errors.
+1.0c2 (2011-04-01)
+------------------
+
+- Little bit refactoring, because of some js errors.
   Added calendar_after_change jquery event on at-field-wrapper element.
-  [31.03.2011, mathias.leimgruber]
+  [mathias.leimgruber]
 
-1.0c1
------
-* Fix default_date (for IE7).
-  [02.02.2011, mathias.leimgruber]
 
-* Clean up js code for IE7/8.
-  [02.02.2011, mathias.leimgruber]
+1.0c1 (2011-02-02)
+------------------
 
-1.0a2
------
-* removed unused browserlayer
-  [04.08.2010, mathias.leimgruber]
+- Fix default_date (for IE7).
+  [mathias.leimgruber]
 
-* fixed resources
+- Clean up js code for IE7/8.
+  [mathias.leimgruber]
+
+
+1.0a2 (2010-10-26)
+------------------
+
+- removed unused browserlayer
+  [mathias.leimgruber]
+
+- fixed resources
   [phgross]
 
-* change collective.jqueryui to collective.js.jqueryui and fixed some templates for plone4 support
-  [phgross, 08.07.2010]
+- change collective.jqueryui to collective.js.jqueryui and fixed some templates for plone4 support
+  [phgross]
 
 
-1.0a1
------
+1.0a1 (2010-04-13)
+------------------
 
-* Initial release
-
+- Initial release
