@@ -54,21 +54,7 @@ jq(function(){
                     
                 }
             });
-            
-            // XXX: OLD IMPLEMENTATION
-            // // bind update method
-            // field.parents('[id*=archetypes-fieldname]').bind('change', function(e){
-            //     var input = jq(this).find('input:first');
-            //     var id = input.attr('id');
-            //     var year = jq('#'+ id+'_year').attr('value');
-            //     var day = jq('#'+ id+'_day').attr('value');
-            //     var month = jq('#'+ id+'_month').attr('value');
-            //     input.attr('value', day+ '. ' + month +' '+ year);
-            //     
-            //     // Trigger an after change events for further actions
-            //     jq(this).trigger('calendar_after_change');
-            // });
-            
+                        
         });        
     }
     init_datepicker();
