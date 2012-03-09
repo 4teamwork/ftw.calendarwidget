@@ -40,7 +40,7 @@ Usage
 Screenshot
 ----------
 
-.. image:: docs/screenshot.png
+.. image:: https://github.com/4teamwork/ftw.calendarwidget/raw/master/docs/screenshot.png
 
 
 Links
