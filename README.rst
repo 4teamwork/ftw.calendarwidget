@@ -2,7 +2,7 @@ ftw.calendarwidget
 ==================
 
 ``ftw.calendarwidget`` provides an archetypes calendar widget using
-the jQuery UI datepicker.
+the `jQuery UI datepicker <http://jqueryui.com/demos/datepicker/>`_.
 
 
 Usage
@@ -35,6 +35,12 @@ Usage
     ...     ),
     ...
     ... ))
+
+
+Screenshot
+----------
+
+.. image:: docs/screenshot.png
 
 
 Links
