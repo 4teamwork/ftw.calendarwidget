@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import os
 
 
-version = '1.1.2.dev0'
+version = '1.1.2'
 maintainer = 'Philippe Gross'
 
 setup(name='ftw.calendarwidget',
