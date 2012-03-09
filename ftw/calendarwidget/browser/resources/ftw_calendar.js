@@ -17,7 +17,7 @@ jq(function(){
             default_value = jq(this).children('input:first').attr('value');
             if (default_value.length){
                 var temp = default_value.split('/');
-                var default_date = new Date(temp[0], temp[1], temp[2]);         
+                var default_date = new Date(temp[0], temp[1], temp[2]);
             }
             else{
                 default_date = null;
@@ -48,17 +48,17 @@ jq(function(){
                         }
                         jq('select[id*=month]', new_field).attr('value', currentMonth);
                         jq('select[id*=day]', new_field).attr('value', currentDay);
-                        
+
                         // Trigger an after change events for further actions
                         new_field.trigger('calendar_after_change');
-                    
+
                 }
             });
-                        
-        });        
+
+        });
     }
     init_datepicker();
-    
+
     function insert_date(date, e){
         var field_id = jq(e).attr('id');
         var yf = jq('#' + field_id +'_year');
@@ -75,5 +75,5 @@ jq(function(){
         df.attr('value', day);
     }
 
-    
+
 });

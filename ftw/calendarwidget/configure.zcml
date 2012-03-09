@@ -6,21 +6,18 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="ftw.calendarwidget">
 
-   <!-- <i18n:registerTranslations directory="locales" /> -->
-   <include package=".browser" />
+    <include package=".browser" />
 
-   <include package="collective.js.jqueryui" />
+    <include package="collective.js.jqueryui" />
 
-   <genericsetup:registerProfile
-       name="default"
-       title="ftw.calendarwidget"
-       directory="profiles/default"
-       description=""
-       provides="Products.GenericSetup.interfaces.EXTENSION"
-       />
+    <genericsetup:registerProfile
+        name="default"
+        title="ftw.calendarwidget"
+        directory="profiles/default"
+        description=""
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
 
-   <cmf:registerDirectory
-       name="ftw_calendarwidget
-             "/>
-   
+    <cmf:registerDirectory name="ftw_calendarwidget"/>
+
 </configure>

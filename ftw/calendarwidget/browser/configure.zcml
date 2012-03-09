@@ -7,6 +7,6 @@
     <browser:resourceDirectory
         name="ftw.calendarwidget"
         directory="resources"
-        /> 
+        />
 
 </configure>

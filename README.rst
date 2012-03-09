@@ -1,7 +1,8 @@
 ftw.calendarwidget
 ==================
 
-``ftw.calendarwidget`` provides an archetypes calendar widget using the jQuery UI datepicker.
+``ftw.calendarwidget`` provides an archetypes calendar widget using
+the jQuery UI datepicker.
 
 
 Usage
@@ -23,17 +24,17 @@ Usage
 
 ::
 
-    from Products.Archetypes import atapi
-    from ftw.calendarwidget.browser.widgets import FtwCalendarWidget
+    >>> from Products.Archetypes import atapi
+    >>> from ftw.calendarwidget.browser.widgets import FtwCalendarWidget
 
-    MySchema = atapi.Schema((
-
-        atapi.DateTimeField(
-            name='mydate',
-            widget=FtwCalendarWidget(label='My Date')
-        ),
-
-    ))
+    >>> MySchema = atapi.Schema((
+    ...
+    ...     atapi.DateTimeField(
+    ...         name='mydate',
+    ...         widget=FtwCalendarWidget(label='My Date')
+    ...     ),
+    ...
+    ... ))
 
 
 Links
@@ -44,7 +45,9 @@ Links
 - Package on pypi: http://pypi.python.org/pypi/ftw.calendarwidget
 
 
-Maintainer
-----------
+Copyright
+---------
 
-This package is produced and maintained by `4teamwork <http://www.4teamwork.ch/>`_ company.
+This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
+
+``ftw.calendarwidget`` is licensed under GNU General Public License, version 2.
