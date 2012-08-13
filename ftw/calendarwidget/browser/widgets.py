@@ -6,8 +6,8 @@ class FtwCalendarWidget(CalendarWidget):
     _properties.update({
             'macro': "ftw_calendar",
             'format': '',  # time.strftime string
-            'show_hm': True,
             'show_ymd': True,
+            'show_hm': True,
             'starting_year': None,
             'ending_year': None,
             'future_years': None,

@@ -36,8 +36,26 @@
 
     <metal:define define-macro="edit"
        tal:define="format widget/format">
-      <metal:use use-macro="field_macro | here/widgets/field/macros/edit">
+      <metal:use use-macro="field_macro | context/widgets/field/macros/edit">
         <metal:fill fill-slot="widget_body">
+        <div class="formQuestion label">
+            <span tal:replace="python:widget.Label(here)" 
+                  i18n:translate="" />
+            <span class="required"
+                  tal:condition="field/required"
+                  title="Required"
+                  i18n:attributes="title title_required;"
+                  style="color: #f00;">
+              &#x25a0;
+            </span>
+        </div>
+        <div class="formHelp"
+             tal:define="description python:widget.Description(here)"
+             tal:content="structure description"
+             tal:attributes="id string:${fieldName}_help"
+             i18n:translate="">
+          Help
+        </div>
           <tal:define define="id fieldName;
                               show_hm widget/show_hm|nothing;
                               show_ymd widget/show_ymd|nothing;
@@ -47,7 +65,7 @@
                               inputname fieldName;
                               formname string:edit_form;
                               inputvalue python:test(value!='None', value, '');">
-            <metal:box use-macro="here/picker/macros/ftw_calendarDatePickerBox">
+            <metal:box use-macro="here/picker/macros/ftw_calendarDatePickerBox|default">
               a calendar, hopefully
             </metal:box>
           </tal:define>
@@ -56,7 +74,7 @@
     </metal:define>
 
     <metal:define define-macro="search">
-      <metal:field use-macro="here/widgets/field/macros/edit">
+      <metal:field use-macro="context/widgets/field/macros/edit">
         <metal:slot fill-slot="widget_body">
           <tal:from define="id fieldName;
                             show_hm widget/show_hm|nothing;
@@ -64,7 +82,7 @@
                             inputname fieldName;
                             formname string:search_form;
                             inputvalue python:min(request.form.get(fieldName, None) or request.other.get(fieldName, None) or ('1975-05-26',)).strip();">
-            <metal:box use-macro="here/picker/macros/ftw_calendarDatePickerBox">
+            <metal:box use-macro="here/picker/macros/ftw_calendarDatePickerBox|default">
               a calendar, hopefully
             </metal:box>
           </tal:from>
@@ -73,7 +91,7 @@
                           inputname fieldName;
                           formname string:search_form;
                           inputvalue python:max(request.form.get(fieldName, None) or request.other.get(fieldName, None) or ('2975-05-26',)).strip();">
-            <metal:box use-macro="here/picker/macros/ftw_calendarDatePickerBox">
+            <metal:box use-macro="here/picker/macros/ftw_calendarDatePickerBox|default">
               a calendar, hopefully
             </metal:box>
           </tal:to>
