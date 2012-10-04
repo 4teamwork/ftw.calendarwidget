@@ -9,7 +9,6 @@ import ftw.calendarwidget
 import collective.js.jqueryui
 
 
-
 class FtwCalendarWidgetLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE, )

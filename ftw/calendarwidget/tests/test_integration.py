@@ -9,6 +9,7 @@ from plone.app.testing import login
 from plone.app.testing import setRoles
 import transaction
 
+
 class TestCalendarwidget(TestCase):
 
     layer = FTW_CALENDARWIDGET_INTEGRATION_TESTING
