@@ -14,6 +14,20 @@ class FtwCalendarWidgetLayer(PloneSandboxLayer):
     defaultBases = (PLONE_FIXTURE, )
 
     def setUpZope(self, app, configurationContext):
+
+        # Patch effectiveDate, so our FtwCalendarwidget is used
+        from ftw.calendarwidget.browser.widgets import FtwCalendarWidget
+        from Products.ATContentTypes.content.base import registerATCT
+        from Products.ATContentTypes.content.document import ATDocument
+        from Products.ATContentTypes.content.document import PROJECTNAME
+
+        ATDocument.schema['effectiveDate'].widget = FtwCalendarWidget(
+                label='MyDate'
+            )
+
+        registerATCT(ATDocument, PROJECTNAME)
+
+
         # Load ZCML
 
         xmlconfig.file('configure.zcml',
