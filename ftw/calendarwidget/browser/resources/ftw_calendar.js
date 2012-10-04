@@ -52,28 +52,28 @@ jq(function(){
                         // Trigger an after change events for further actions
                         new_field.trigger('calendar_after_change');
 
-                }
-            });
+                    }
+                });
 
-        });
+});
+}
+init_datepicker();
+
+function insert_date(date, e){
+    var field_id = jq(e).attr('id');
+    var yf = jq('#' + field_id +'_year');
+    yf.attr('value', e.selectedYear);
+
+    var mf = jq('#' + field_id +'_month');
+    mf.attr('value', jq(mf.attr('options')[e.selectedMonth + 1]).attr('value'));
+
+    var df = jq('#'+ field_id +'_day');
+    var day = e.selectedDay;
+    if(day < 10){
+        day = '0'+ day.toString();
     }
-    init_datepicker();
-
-    function insert_date(date, e){
-        var field_id = jq(e).attr('id');
-        var yf = jq('#' + field_id +'_year');
-        yf.attr('value', e.selectedYear);
-
-        var mf = jq('#' + field_id +'_month');
-        mf.attr('value', jq(mf.attr('options')[e.selectedMonth + 1]).attr('value'));
-
-        var df = jq('#'+ field_id +'_day');
-        var day = e.selectedDay;
-        if(day < 10){
-            day = '0'+ day.toString();
-        }
-        df.attr('value', day);
-    }
+    df.attr('value', day);
+}
 
 
 });
