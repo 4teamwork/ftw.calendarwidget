@@ -5,6 +5,9 @@ import os
 version = '1.1.4.dev0'
 maintainer = 'Philippe Gross'
 
+
+tests_require = ['plone.app.testing',]
+
 setup(name='ftw.calendarwidget',
       version=version,
       description='A plone widget for archetypes using the jQuery UI ' + \
@@ -33,7 +36,8 @@ setup(name='ftw.calendarwidget',
       namespace_packages=['ftw'],
       include_package_data=True,
       zip_safe=False,
-
+      tests_require=tests_require,
+      extras_require=dict(tests=tests_require),
       install_requires=[
         'setuptools',
         'collective.js.jqueryui',
