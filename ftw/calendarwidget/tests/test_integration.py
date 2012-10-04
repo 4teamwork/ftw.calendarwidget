@@ -1,12 +1,11 @@
 from ftw.calendarwidget.testing import FTW_CALENDARWIDGET_INTEGRATION_TESTING
 from plone.app.testing import TEST_USER_NAME, TEST_USER_PASSWORD, TEST_USER_ID
-from plone.app.testing import SITE_OWNER_NAME
 from plone.testing.z2 import Browser
 from unittest2 import TestCase
 from Products.CMFCore.utils import getToolByName
 from Products.Archetypes import atapi
 from ftw.calendarwidget.browser.widgets import FtwCalendarWidget
-from plone.app.testing import login, logout
+from plone.app.testing import login
 from plone.app.testing import setRoles
 import transaction
 
