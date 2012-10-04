@@ -39,13 +39,15 @@ jq(function(){
                         jq('select[id*=year]', new_field).attr('value', inst.currentYear);
                         // hack adding leading zero
                         var currentMonth = inst.currentMonth+1; // XXX: for some reason the wrong month is stored, ARGH
-                        if (inst.currentMonth.toString().length == 1){
+
+                        if (currentMonth.toString().length == 1){
                             currentMonth = "0"+currentMonth;
                         }
                         var currentDay = inst.currentDay;
                         if (currentDay.toString().length == 1){
                             currentDay = "0"+currentDay;
                         }
+
                         jq('select[id*=month]', new_field).attr('value', currentMonth);
                         jq('select[id*=day]', new_field).attr('value', currentDay);
 
