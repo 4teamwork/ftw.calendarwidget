@@ -5,6 +5,9 @@ Changelog
 1.1.4 (unreleased)
 ------------------
 
+- Fix IE8 issues.
+  [mathias.leimgruber]
+
 - Added test setup and some integration tests. 
   [mathias.leimgruber]
 
