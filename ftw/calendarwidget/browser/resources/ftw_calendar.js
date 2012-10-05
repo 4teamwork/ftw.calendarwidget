@@ -14,15 +14,18 @@ jq(function(){
 
         jq('div.datepicker').each(function(){
             var field = jq(this).children('input:first');
+            var default_date;
             default_value = jq(this).children('input:first').attr('value');
             if (default_value.length){
                 var temp = default_value.split('/');
-                var default_date = new Date(temp[0], temp[1], temp[2]);
+                default_date = new Date(temp[0], temp[1], temp[2].slice(0, 2));
+                console.info(temp);
             }
             else{
                 default_date = null;
             }
 
+            //console.info(default_date);
             picker = field.datepicker({
                 showOn: 'button',
                 onClose: insert_date,
@@ -31,30 +34,7 @@ jq(function(){
                 dateFormat: 'd. MM yy',
                 changeMonth: true,
                 changeYear: true,
-                defaultDate: default_date,
-                onClose: function(dateText, inst){
-                        // XXX refactor me, please - it works, but OMFG
-                        inst.input.attr('value', dateText);
-                        var new_field = inst.input.parents('[id*=archetypes-fieldname]');
-                        jq('select[id*=year]', new_field).attr('value', inst.currentYear);
-                        // hack adding leading zero
-                        var currentMonth = inst.currentMonth+1; // XXX: for some reason the wrong month is stored, ARGH
-
-                        if (currentMonth.toString().length == 1){
-                            currentMonth = "0"+currentMonth;
-                        }
-                        var currentDay = inst.currentDay;
-                        if (currentDay.toString().length == 1){
-                            currentDay = "0"+currentDay;
-                        }
-
-                        jq('select[id*=month]', new_field).attr('value', currentMonth);
-                        jq('select[id*=day]', new_field).attr('value', currentDay);
-
-                        // Trigger an after change events for further actions
-                        new_field.trigger('calendar_after_change');
-
-                    }
+                defaultDate: default_date
                 });
 
 });
