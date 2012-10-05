@@ -19,7 +19,6 @@ jq(function(){
             if (default_value.length){
                 var temp = default_value.split('/');
                 default_date = new Date(temp[0], temp[1], temp[2].slice(0, 2));
-                console.info(temp);
             }
             else{
                 default_date = null;
