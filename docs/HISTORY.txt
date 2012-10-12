@@ -5,10 +5,13 @@ Changelog
 1.1.4 (unreleased)
 ------------------
 
+- Fixed widget selecting wrong month.
+  [Julian Infanger]
+
 - Fix IE8 issues.
   [mathias.leimgruber]
 
-- Added test setup and some integration tests. 
+- Added test setup and some integration tests.
   [mathias.leimgruber]
 
 - Fix communication between datepick widget and select fields.
