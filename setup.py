@@ -5,7 +5,14 @@ import os
 version = '1.1.5.dev0'
 
 tests_require = [
+    'unittest2',
+    'plone.testing',
     'plone.app.testing',
+    'Products.ATContentTypes',
+    'Products.Archetypes',
+    'Products.CMFCore',
+    'transaction',
+    'zope.configuration',
     ]
 
 setup(name='ftw.calendarwidget',
@@ -37,13 +44,14 @@ setup(name='ftw.calendarwidget',
       namespace_packages=['ftw'],
       include_package_data=True,
       zip_safe=False,
-      tests_require=tests_require,
-      extras_require=dict(tests=tests_require),
+
       install_requires=[
         'setuptools',
         'collective.js.jqueryui',
-        # -*- Extra requirements: -*-
+        'Products.Archetypes',
         ],
+      tests_require=tests_require,
+      extras_require=dict(tests=tests_require),
 
       entry_points='''
       # -*- Entry points: -*-
