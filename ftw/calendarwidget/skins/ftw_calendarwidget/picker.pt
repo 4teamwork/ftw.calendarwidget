@@ -59,7 +59,7 @@
           <option value="year"
                   tal:repeat="year years"
                   tal:attributes="value year/value; selected year/selected"
-                  tal:content="year/id">year</option>
+                  tal:content="year/id" />
 
           </select>
       </span>
@@ -91,9 +91,7 @@
         <option value="subj"
                 tal:repeat="month months"
                 tal:attributes="value month/value; selected month/selected"
-                tal:content="month/title">
-            month name
-        </option>
+                tal:content="month/title" />
       </select>
       </span>
 
@@ -111,7 +109,7 @@
         <option value="subj"
                 tal:repeat="day days"
                 tal:attributes="value day/value; selected day/selected"
-                tal:content="day/id">day</option>
+                tal:content="day/id" />
 
     </select>
 
@@ -136,7 +134,7 @@
               <option value="subj"
                       tal:repeat="hour hours"
                       tal:attributes="value hour/value; selected hour/selected"
-                      tal:content="hour/id">hour</option>
+                      tal:content="hour/id" />
 
           </select>
       </span>
@@ -166,7 +164,7 @@
             <option value="subj"
                     tal:repeat="minute minutes"
                     tal:attributes="value minute/value; selected minute/selected"
-                    tal:content="minute/id">hour</option>
+                    tal:content="minute/id" />
 
          </select>
       </span>
@@ -195,7 +193,7 @@
                   tal:repeat="ampm ampm"
                   tal:attributes="value ampm/value; selected ampm/selected"
                   i18n:translate=""
-          tal:content="ampm/id">ampm</option>
+          tal:content="ampm/id" />
 
         </select>
       </span>
@@ -247,7 +245,7 @@
 
     <tr tal:define="weekdays here/portal_calendar/getDays" class="weekdays">
       <tal:block repeat="weekday weekdays">
-        <td i18n:translate="" tal:content="weekday">Su</td>
+        <td i18n:translate="" tal:content="weekday" />
       </tal:block>
     </tr>
         </thead>
@@ -261,9 +259,7 @@
           <td class="noevent" tal:condition="python: day"
           tal:define="datestring python:'%d/%0.2d/%0.2d'%(year,month,day)"
           tal:attributes="class python:test(current.year()==year and current.month()==month and current.day()==int(day), 'todaynoevent', 'noevent')">
-        <a href="" tal:attributes="onclick string:returndate('${datestring}');; return false" tal:content="day">
-          day number
-        </a>
+        <a href="" tal:attributes="onclick string:returndate('${datestring}');; return false" tal:content="day" />
           </td>
         </tal:block>
       </tal:block>
