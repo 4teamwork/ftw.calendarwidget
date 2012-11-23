@@ -4,13 +4,14 @@ import os
 
 version = '1.1.5.dev0'
 
-
-tests_require = ['plone.app.testing',]
+tests_require = [
+    'plone.app.testing',
+    ]
 
 setup(name='ftw.calendarwidget',
       version=version,
-      description='A plone widget for archetypes using the jQuery UI ' + \
-          'calendar widget',
+      description='A plone widget for archetypes using the ' + \
+          'jQuery UI calendar widget',
       long_description=open('README.rst').read() + '\n' + \
           open(os.path.join('docs', 'HISTORY.txt')).read(),
 
@@ -18,7 +19,8 @@ setup(name='ftw.calendarwidget',
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         'Framework :: Plone',
-        'Framework :: Plone :: 3.2',
+        'Framework :: Plone :: 4.1',
+        'Framework :: Plone :: 4.2',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
