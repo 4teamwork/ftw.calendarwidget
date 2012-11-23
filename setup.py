@@ -3,7 +3,6 @@ import os
 
 
 version = '1.1.5.dev0'
-maintainer = 'Philippe Gross'
 
 
 tests_require = ['plone.app.testing',]
