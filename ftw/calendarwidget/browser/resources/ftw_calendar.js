@@ -17,7 +17,7 @@ jq(function(){
             var default_date;
             default_value = jq(this).children('input:first').attr('value');
             if (default_value.length){
-                var temp = default_value.split('/');
+                var temp = default_value.split('-');
                 // month - 1 because Date(1,0,2000) => 1th January 2000
                 default_date = new Date(temp[0], temp[1]-1, temp[2].slice(0, 2));
             }
