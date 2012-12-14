@@ -55,6 +55,8 @@ function insert_date(date, e){
         day = '0'+ day.toString();
     }
     df.attr('value', day);
+    jq('#' + field_id).trigger('calendar_after_change');
+
 }
 
 

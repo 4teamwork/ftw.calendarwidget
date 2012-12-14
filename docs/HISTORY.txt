@@ -5,6 +5,9 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
+- Make ftw_calendar.js fire the 'calendar_after_change' event again.
+  [tschanzt]
+
 - Don't split date with '/' use '-' instead.
   [tschanzt]
 
