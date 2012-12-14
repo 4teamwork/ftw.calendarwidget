@@ -5,7 +5,8 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Don't split date with '/' use '-' instead.
+  [tschanzt]
 
 
 1.1.4 (2012-10-16)
