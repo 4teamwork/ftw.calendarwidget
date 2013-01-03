@@ -4,6 +4,12 @@ ftw.calendarwidget
 ``ftw.calendarwidget`` provides an archetypes calendar widget using
 the `jQuery UI datepicker <http://jqueryui.com/demos/datepicker/>`_.
 
+.. figure:: http://onegov.ch/approved.png/image
+   :align: right
+   :target: http://onegov.ch/community/zertifizierte-module/ftw.calendarwidget
+
+   Certified: 01/2013
+
 
 Usage
 -----

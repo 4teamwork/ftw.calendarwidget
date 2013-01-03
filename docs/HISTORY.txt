@@ -5,6 +5,9 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
+- onegov.ch approved: add badge to readme.
+  [jone]
+
 - Make ftw_calendar.js fire the 'calendar_after_change' event again.
   [tschanzt]
 
