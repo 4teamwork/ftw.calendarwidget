@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.5 (unreleased)
+1.1.5 (2013-01-21)
 ------------------
 
 - onegov.ch approved: add badge to readme.
