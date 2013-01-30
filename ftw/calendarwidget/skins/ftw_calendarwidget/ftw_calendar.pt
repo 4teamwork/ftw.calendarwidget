@@ -46,7 +46,7 @@
                   title="Required"
                   i18n:attributes="title title_required;"
                   style="color: #f00;">
-              &#x25a0;
+              &nbsp;
             </span>
         </div>
         <div class="formHelp"
