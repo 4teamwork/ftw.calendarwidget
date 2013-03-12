@@ -43,8 +43,11 @@ $(function(){
                 defaultDate: default_date
                 });
 
-});
-}
+
+            });
+        });
+    }
+
 init_datepicker();
 
 function insert_date(date, e){
