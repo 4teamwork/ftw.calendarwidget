@@ -15,7 +15,7 @@ $(function(){
             var field = $(this).children('input:first');
             var default_date;
             default_value = $(this).children('input:first').attr('value');
-            if (default_value.length){
+
             if (default_value.length){
 
                 var temp;
@@ -41,14 +41,15 @@ $(function(){
                 changeMonth: true,
                 changeYear: true,
                 defaultDate: default_date
-                });
-
-
             });
+
+
         });
     }
 
-init_datepicker();
+    init_datepicker();
+});
+
 
 function insert_date(date, e){
     var field_id = $(e).attr('id');
@@ -68,5 +69,3 @@ function insert_date(date, e){
 
 }
 
-
-});
