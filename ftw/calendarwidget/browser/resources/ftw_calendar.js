@@ -57,7 +57,7 @@ function insert_date(date, e){
     yf.attr('value', e.selectedYear);
 
     var mf = $('#' + field_id +'_month');
-    mf.attr('value', $(mf.attr('options')[e.selectedMonth + 1]).attr('value'));
+    mf.find('option')[e.selectedMonth + 1].selected = true;
 
     var df = $('#'+ field_id +'_day');
     var day = e.selectedDay;
@@ -68,4 +68,3 @@ function insert_date(date, e){
     $('#' + field_id).trigger('calendar_after_change');
 
 }
-
