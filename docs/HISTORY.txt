@@ -5,7 +5,8 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix month picking for Plone 4.3 jQuery version.
+  [jone]
 
 
 1.1.7 (2013-03-17)
