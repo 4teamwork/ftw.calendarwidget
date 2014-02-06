@@ -30,7 +30,22 @@ $(function(){
             else{
                 default_date = null;
             }
+            var options = $(this).find('select[name$=year] option');
 
+            var option_values = new Array();
+            var option_index = 0;
+            for (index = 0; index < options.length; ++index) {
+
+                if (isNaN(parseInt(options[index].value)) || parseInt(options[index].value) == 0){
+                    continue;
+                }
+                else{
+                option_values[option_index] = options[index].value;
+                ++option_index;
+                }
+            }
+            var max_year = Math.max.apply(Math, option_values);
+            var min_year = Math.min.apply(Math, option_values);
             //console.info(default_date);
             picker = field.datepicker({
                 showOn: 'button',
@@ -40,7 +55,8 @@ $(function(){
                 dateFormat: 'd. MM yy',
                 changeMonth: true,
                 changeYear: true,
-                defaultDate: default_date
+                defaultDate: default_date,
+                yearRange: min_year + ':' + max_year
             });
 
 
