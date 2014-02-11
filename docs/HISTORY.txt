@@ -5,7 +5,8 @@ Changelog
 1.1.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Respect Start and End year of Plone.
+  [tschanzt]
 
 
 1.1.8 (2013-08-26)
