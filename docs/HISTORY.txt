@@ -5,7 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- JavaScript: make init_datepicker function public.
+  This is useful in combination with AJAX.
+  [jone]
 
 
 1.1.9 (2014-04-23)

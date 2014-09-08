@@ -1,6 +1,6 @@
 $(function(){
 
-    function init_datepicker(){
+    init_datepicker = function(){
         //read out language cookie
         var language = 'de';
         var language_cookie = document.cookie.match ( '(^|;) ?' + 'I18N_LANGUAGE' + '=([^;]*)(;|$)' );
