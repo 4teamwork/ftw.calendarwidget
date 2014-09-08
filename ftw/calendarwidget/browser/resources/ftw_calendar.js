@@ -36,7 +36,7 @@ $(function(){
             var option_index = 0;
             for (index = 0; index < options.length; ++index) {
 
-                if (isNaN(parseInt(options[index].value)) || parseInt(options[index].value) == 0){
+                if (isNaN(parseInt(options[index].value, 10)) || parseInt(options[index].value, 10) === 0){
                     continue;
                 }
                 else{
