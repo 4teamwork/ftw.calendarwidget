@@ -17,6 +17,9 @@ $(function(){
             default_value = $(this).children('input:first').attr('value');
 
             if (default_value.length){
+              /* Strip negative GMT-timezone in order to not match tests for "-" below.
+                 We dont need the timezone. */
+              default_value = default_value.replace(/ *gmt-\d{1,2}/i, '');
 
                 var temp;
                 if (default_value.search('-') !== -1){
