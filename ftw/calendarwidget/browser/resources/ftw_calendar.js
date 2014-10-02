@@ -61,7 +61,7 @@ $(function(){
 
 
         });
-    }
+    };
 
     init_datepicker();
 });
