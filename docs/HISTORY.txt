@@ -5,7 +5,8 @@ Changelog
 1.1.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix JavaScript error when having a negative GMT timezone.
+  [jone]
 
 
 1.1.10 (2014-09-08)
