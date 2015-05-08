@@ -52,9 +52,9 @@ Screenshot
 Links
 -----
 
-- Github project repository: https://github.com/4teamwork/ftw.calendarwidget
-- Issue tracker: https://github.com/4teamwork/ftw.calendarwidget/issues
-- Package on pypi: http://pypi.python.org/pypi/ftw.calendarwidget
+- Github: https://github.com/4teamwork/ftw.calendarwidget
+- Issues: https://github.com/4teamwork/ftw.calendarwidget/issues
+- Pypi: http://pypi.python.org/pypi/ftw.calendarwidget
 - Continuous integration: https://jenkins.4teamwork.ch/search?q=ftw.calendarwidget
 
 
