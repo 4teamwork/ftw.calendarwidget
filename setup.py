@@ -36,7 +36,7 @@ setup(name='ftw.calendarwidget',
         ],
 
       keywords='ftw calendar widget archetypes plone',
-      author='4teamwork GmbH',
+      author='4teamwork AG',
       author_email='mailto:info@4teamwork.ch',
       url='https://github.com/4teamwork/ftw.calendarwidget',
       license='GPL2',
