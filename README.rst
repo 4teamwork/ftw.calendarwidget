@@ -64,7 +64,3 @@ Copyright
 This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
 
 ``ftw.calendarwidget`` is licensed under GNU General Public License, version 2.
-
-.. image:: https://cruel-carlota.pagodabox.com/99e61f1895113404713b9c809ba36e97
-   :alt: githalytics.com
-   :target: http://githalytics.com/4teamwork/ftw.calendarwidget
