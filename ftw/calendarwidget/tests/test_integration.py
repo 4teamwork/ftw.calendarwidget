@@ -41,7 +41,7 @@ class TestCalendarwidget(TestCase):
             widget=FtwCalendarWidget(label='My Date')),
         ))
         widget = schema['mydate'].widget
-        self.assertEquals(widget.helper_js, 'ftw_calendar.js')
+        self.assertEquals(widget.helper_js, ('ftw_calendar.js',))
         self.assertEquals(widget.helper_css, ('jscalendar/calendar-system.css', ))
 
 
