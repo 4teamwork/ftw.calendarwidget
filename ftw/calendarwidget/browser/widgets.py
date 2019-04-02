@@ -11,8 +11,6 @@ class FtwCalendarWidget(CalendarWidget):
             'starting_year': None,
             'ending_year': None,
             'future_years': None,
-            # XXX: helper_js does not make sense to me, because the js is
-            # registered in jsregistry
-            'helper_js': ('ftw_calendar.js',),
+            'helper_js': (),
             'helper_css': ('jscalendar/calendar-system.css',),
             })

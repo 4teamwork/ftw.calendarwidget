@@ -5,6 +5,10 @@ Changelog
 1.1.13 (unreleased)
 -------------------
 
+- Drop Plone 4.2 support. [mbaechtold]
+
+- Remove unused helper JavaScript in the widget configuration. [mbaechtold]
+
 - Drop Plone 4.1 support. [jone]
 
 
